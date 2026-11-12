@@ -1,0 +1,98 @@
+
+.product-card {
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    background: var(--card-bg);
+    color: var(--text-color);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+
+    &:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    }
+
+    .product-image {
+        height: 230px;
+        position: relative;
+        overflow: hidden;
+        background: rgba(128, 128, 128, 0.08);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            padding: 0;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        // Image Hover Zoom
+        &:hover img {
+            transform: scale(1.12);
+        }
+
+        .product-badge {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            z-index: 1;
+            background: #27c6be;
+            color: #fff;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+        }
+    }
+
+    .product-info {
+        padding: 18px;
+
+        h5 {
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .product-category {
+            font-size: 13px;
+            opacity: 0.65;
+        }
+    }
+
+    .product-price {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-bottom: 15px;
+
+        span {
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        del {
+            opacity: 0.5;
+            font-size: 14px;
+        }
+    }
+
+    .add-to-cart {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 7px;
+        background: #151a21;
+        color: #fff;
+        transition: 0.3s ease;
+
+        &:hover {
+            background: #27c6be;
+            transform: translateY(-2px);
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+  "devDependencies": {
+    "sass": "^1.107.1"
+  },
+  "name": "web-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "chokidar": "^5.0.0",
+    "detect-libc": "^2.1.2",
+    "immutable": "^5.1.9",
+    "is-extglob": "^2.1.1",
+    "is-glob": "^4.0.3",
+    "node-addon-api": "^7.1.1",
+    "picomatch": "^4.0.5",
+    "readdirp": "^5.1.1",
+    "source-map-js": "^1.2.1"
+  },
+  "scripts": {
+    "dev": "sass --watch scss/index.scss css/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
