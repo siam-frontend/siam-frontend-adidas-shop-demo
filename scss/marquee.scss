@@ -1,0 +1,77 @@
+
+.shoe-marquee {
+    padding: 60px 0;
+    overflow: hidden;
+
+    // Heading
+    .marquee-heading {
+        text-align: center;
+        margin-bottom: 30px;
+
+        span {
+            color: #00b4d0;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 3px;
+        }
+
+        h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-top: 8px;
+        }
+    }
+
+    // Marquee Container
+    .marquee {
+        width: 100%;
+        overflow: hidden;
+
+        // Scrolling Track
+        .marquee-track {
+            display: flex;
+            gap: 20px;
+            width: max-content;
+            animation: shoe-scroll 25s linear infinite;
+
+            // Pause on Hover
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
+
+        // Shoe Items
+        .marquee-item {
+            flex: 0 0 185px;
+            height: 130px;
+            overflow: hidden;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+                transform: scale(1);
+                transition: transform 0.5s ease;
+            }
+
+            // Image Zoom on Hover
+            &:hover img {
+                transform: scale(1.12);
+            }
+        }
+    }
+}
+
+// Infinite Scroll Animation
+@keyframes shoe-scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}

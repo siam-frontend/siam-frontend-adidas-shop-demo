@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="css/style.css">
+       <title>Adidas shops</title>
+        <!-- Bootstrap JavaScript -->
+      <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+      <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        >
+  </head>
+  <body>
+       <nav 
+           class="navbar navbar-expand-md fixed-top navbar-light border-bottom">
+           <div class="container">
+               <a class="navbar-brand" href="/">
+                   <img 
+                      src="./assets/adidas.svg"
+                      alt="Adidas"
+                      width="120"
+                      height="60"
+                    >
+               </a>
+               <button 
+                  class="navbar-toggler" 
+                  type="button" 
+                  data-bs-toggle="collapse" 
+                  data-bs-target="#navbarSupportedContent" 
+                  aria-controls="navbarSupportedContent" 
+                  aria-expanded="false" 
+                  aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                   <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                       <!-- Dark / Light Toggle -->
+                       <li class="nav-item d-flex align-items-center m-2">
+                           <button
+                              type="button"
+                              class="theme-toggle"
+                              id="themeToggle"
+                              aria-label="Switch to dark mode"
+                            >
+                             <i class="bi bi-moon-stars-fill" id="themeIcon"></i>
+                           </button>
+                      </li>
+                        <!-- Navigation Links -->
+                       <li class="nav-item">
+                           <a class="nav-link active" 
+                              aria-current="page" 
+                              href="index.html">Home
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                           <a 
+                              class="nav-link"
+                              href="about.html">About
+                            </a>
+                       </li>
+                       <li class="nav-item">
+                           <a 
+                              class="nav-link" 
+                              href="contact.html">Contact
+                           </a>
+                      </li>
+                      <li class="nav-item">
+                           <a 
+                             class="btn btn-primary" 
+                             href="#" 
+                             role="button"
+                           >
+                           Sign up
+                           </a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+        <!--main content -->
+        <main>
+            <div class="container mt-3 pt-4">
+                <!-- Products Section -->
+               <section class="products-section">
+                   <div class="container">
+                       <!-- Section Heading -->
+                       <div class="section-heading">
+                          <span>OUR COLLECTION</span>
+                          <h2>Featured Products</h2>
+                          <p>Discover the latest Adidas collection.</p>
+                      </div>
+                       <!-- Product Grid -->
+                       <div class="row g-4">
+                           <!-- Product 1 -->
+                           <div class="col-lg-3 col-md-6 col-6">
+                               <div class="product-card">
+                                   <div class="product-image">
+                                       <span class="product-badge">New</span>
+                                       <img src="./assets/products/adidas1.jpg"
+                                        alt="Adidas Running Shoes">
+                                  </div>
+                                  <div class="product-info">
+                                      <h5>Adidas Running Shoes</h5>
+                                      <p class="product-category">Men's Shoes</p>
+                                      <div class="product-price">
+                                      <span>$89.99</span>
+                                      <del>$110.00</del>
+                                   </div>
+                                   <button class="add-to-cart">
+                                       Add to Cart
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                       <!-- Product 2 -->
+                       <div class="col-lg-3 col-md-6 col-6">
+                           <div class="product-card">
+                               <div class="product-image">
+                                   <span class="product-badge">Sale</span>
+                                   <img src="./assets/products/adidas2.jpg"
+                                    alt="Adidas Sports Shoes">
+                              </div>
+                              <div class="product-info">
+                                  <h5>Adidas Sports Shoes</h5>
+                                  <p class="product-category">Men's Shoes</p>
+                                  <div class="product-price">
+                                       <span>$79.99</span>
+                                       <del>$99.00</del>
+                                  </div>
+                                   <button class="add-to-cart">
+                                      Add to Cart
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- Product 3 -->
+                       <div class="col-lg-3 col-md-6 col-6">
+                           <div class="product-card">
+                               <div class="product-image">
+                                    <img src="./assets/products/adidas3.jpg"
+                                    alt="Adidas Casual Shoes">
+                              </div>
+                              <div class="product-info">
+                                   <h5>Adidas Casual Shoes</h5>
+                                   <p class="product-category">Lifestyle</p>
+                                   <div class="product-price">
+                                        <span>$69.99</span>
+                                        <del>$85.00</del>
+                                  </div>
+                                  <button class="add-to-cart">
+                                       Add to Cart
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- Product 4 -->
+                       <div class="col-lg-3 col-md-6 col-6">
+                           <div class="product-card">
+                               <div class="product-image">
+                                    <img src="./assets/products/adidas4.jpg"
+                                    alt="Adidas Sneakers">
+                              </div>
+                             <div class="product-info">
+                                   <h5>Adidas Sneakers</h5>
+                                   <p class="product-category">Unisex Shoes</p>
+                                  <div class="product-price">
+                                       <span>$99.99</span>
+                                       <del>$120.00</del>
+                                  </div>
+                                   <button class="add-to-cart">
+                                       Add to Cart
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>      
+              </section>
+          </div>
+        </main>
+
+        <!-- Infinite Scroll -->
+        <section class="shoe-marquee">
+            <div class="marquee-heading">
+                <span>EXPLORE MORE</span>
+                <h2>Our Shoe Collection</h2>
+          </div>
+           <div class="marquee">
+               <div class="marquee-track">
+                   <!-- First Set -->
+                   <div class="marquee-item">
+                     <img src="./assets/products/adidas1.jpg" alt="Running Shoes">
+                  </div>
+                   <div class="marquee-item">
+                        <img src="./assets/products/adidas2.jpg" alt="Sports Shoes">
+                  </div>
+                  <div class="marquee-item">
+                      <img src="./assets/products/adidas3.jpg" alt="Casual Shoes">
+                  </div>
+                   <div class="marquee-item">
+                       <img src="./assets/products/adidas4.jpg" alt="Sneakers">
+                  </div>
+
+                  <!-- Duplicate Set for Infinite Loop -->
+
+                  <div class="marquee-item" aria-hidden="true">
+                        <img src="./assets/products/adidas5.jpg" alt="">
+                  </div>
+                   <div class="marquee-item" aria-hidden="true">
+                        <img src="./assets/products/adidas6.jpg" alt="">
+                  </div>
+                   <div class="marquee-item" aria-hidden="true">
+                       <img src="./assets/products/adidas7.jpg" alt="">
+                  </div>
+                  <div class="marquee-item" aria-hidden="true">
+                        <img src="./assets/products/adidas8.jpg" alt="">
+                  </div>
+
+                  <!-- 3rd Set -->
+
+                   <div class="marquee-item" aria-hidden="true">
+                        <img src="./assets/products/adidas9.jpg" alt="">
+                  </div>
+                   <div class="marquee-item" aria-hidden="true">
+                        <img src="./assets/products/adidas10.jpg" alt="">
+                  </div>
+                   <div class="marquee-item" aria-hidden="true">
+                       <img src="./assets/products/adidas11.jpg" alt="">
+                  </div>
+                  <div class="marquee-item" aria-hidden="true">
+                        <img src="./assets/products/adidas12.jpg" alt="">
+                  </div>
+                  
+                   <!-- 4th Set -->
+
+                   <div class="marquee-item" aria-hidden="true">
+                        <img src="./assets/products/adidas13.jpg" alt="">
+                  </div>
+                   <div class="marquee-item" aria-hidden="true">
+                        <img src="./assets/products/adidas14.jpg" alt="">
+                  </div>
+                   <div class="marquee-item" aria-hidden="true">
+                       <img src="./assets/products/adidas15.jpg" alt="">
+                  </div>
+                  <div class="marquee-item" aria-hidden="true">
+                        <img src="./assets/products/adidas16.jpg" alt="">
+                  </div>  
+              </div>
+          </div>
+        </section>
+       <!-- Footer Section -->
+       <footer class="site-footer">
+           <div class="container">
+               <div class="row gy-4">
+                    <!-- Brand Information -->
+                   <div class="col-lg-4 col-md-6">
+                       <div class="footer-brand">
+                           <img src="./assets/adidas.svg"
+                             alt="Adidas Logo"
+                             width="120"
+                            >
+                           <p>
+                               Adidas is a global leader in the sporting goods industry,
+                               offering a wide range of products for athletes and sports
+                               enthusiasts.
+                          </p>
+                      </div>
+                  </div>
+                   <!-- Quick Links -->
+                   <div class="col-lg-2 col-md-6">
+                       <h5>Quick Links</h5>
+                       <ul class="footer-links">
+                          <li><a href="index.html">Home</a></li>
+                          <li><a href="about.html">About Us</a></li>
+                          <li><a href="contact.html">Contact</a></li>
+                      </ul>
+                  </div>
+                   <!-- Customer Support -->
+                   <div class="col-lg-3 col-md-6">
+                       <h5>Customer Support</h5>
+                       <ul class="footer-links">
+                          <li><a href="#">FAQ</a></li>
+                          <li><a href="#">Shipping & Returns</a></li>
+                         <li><a href="#">Warranty</a></li>
+                      </ul>
+                  </div>
+                  <!-- Social Media -->
+                  <div class="col-lg-3 col-md-6">
+                      <h5>Follow Us</h5>
+                       <div class="social-links">
+                           <a href="#" aria-label="Facebook">
+                              <i class="bi bi-facebook"></i>
+                          </a>
+                           <a href="#" aria-label="Instagram">
+                              <i class="bi bi-instagram"></i>
+                          </a>
+                           <a href="#" aria-label="YouTube">
+                              <i class="bi bi-youtube"></i>
+                          </a>
+                           <a href="#" aria-label="Twitter">
+                              <i class="bi bi-twitter-x"></i>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+              <!-- Copyright -->
+               <div class="footer-bottom">
+                   <p>© 2026 Adidas Shops. All Rights Reserved.</p>
+              </div>
+          </div>
+      </footer>
+        <!-- Custom JavaScript -->
+       <script 
+           src="./js/script.js">
+      </script>                                           
+  </body>
+</html>
