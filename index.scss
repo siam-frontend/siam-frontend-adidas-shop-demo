@@ -1,0 +1,55 @@
+//Bootstrap theme changes 
+
+//import bootstrap sass files 
+ //@import "../node_modules/bootstrap/scss/bootstrap";//
+
+//custom codes 
+
+// Bootstrap theme changes
+
+// Import Bootstrap Sass files
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Import custom SCSS files
+@import "./nav/navbar";
+
+
+// Custom codes
+body {
+    margin: 0;
+    padding: 0;
+}
+
+// Light Theme
+
+:root {
+    --bg-color: #ffffff;
+    --text-color: #212529;
+    --card-bg: #f8f9fa;
+    --navbar-bg: rgba(227, 242, 253, 0.85);
+    --border-color: #dee2e6;
+}
+
+[data-theme="dark"] {
+    --bg-color: #111827;
+    --text-color: #ffffff;
+    --card-bg: #1f2937;
+    --navbar-bg: rgba(17, 24, 39, 0.90);
+    --border-color: #374151;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+@import "footer/footer";
+
+@import "products/products";
+
+@import "./marquee";
+
+@import "about/about";
+
+@import "contact/contact";

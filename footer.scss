@@ -1,0 +1,128 @@
+
+.site-footer {
+    margin-top: 0;
+    padding: 60px 0 20px;
+
+    // Footer Background
+    background-color: #151a21;
+    color: #ffffff;
+    border-top: 1px solid #303943;
+
+    // Brand
+    .footer-brand {
+        img {
+            width: 120px;
+            height: 80px;
+            object-fit: contain;
+            margin-bottom: 15px;
+            filter: brightness(0) invert(1);
+        }
+
+        p {
+            max-width: 300px;
+            line-height: 1.8;
+            color: #c2c8d0;
+        }
+    }
+
+    // Footer Headings
+    h5 {
+        color: #ffffff;
+        font-size: 17px;
+        font-weight: 700;
+        margin-bottom: 22px;
+        padding-bottom: 10px;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 35px;
+            height: 3px;
+            background-color: #04AA6D;
+            border-radius: 5px;
+        }
+    }
+
+    // Footer Links
+    ul.footer-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: #c2c8d0;
+            transition: 0.3s ease;
+
+            &:hover {
+                color: #04AA6D;
+                padding-left: 5px;
+            }
+        }
+    }
+
+    // Social Media
+    .social-links {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px;
+
+        a {
+            width: 40px;
+            height: 40px;
+            min-width: 40px;
+            flex-shrink: 0;
+            aspect-ratio: 1 / 1;
+
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            border: 1px solid #46515e;
+            border-radius: 50%;
+
+            color: #ffffff;
+            text-decoration: none;
+            transition: 0.3s ease;
+
+            &:hover {
+                background-color: #04AA6D;
+                border-color: #04AA6D;
+                color: #fff;
+                transform: translateY(-4px);
+            }
+        }
+    }
+
+    // Copyright
+    .footer-bottom {
+        margin-top: 50px;
+        padding-top: 20px;
+        border-top: 1px solid #303943;
+        text-align: center;
+
+        p {
+            margin: 0;
+            font-size: 14px;
+            color: #aeb7c2;
+        }
+    }
+}
+
+
+// Mobile Responsive
+@media (max-width: 767px) {
+    .site-footer {
+        margin-top: 30px;
+        padding-top: 40px;
+    }
+}
